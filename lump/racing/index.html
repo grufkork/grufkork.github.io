@@ -1,0 +1,39 @@
+<style>
+	body{
+		background-color: black;
+		color: white;
+		font-family: Arial;
+	}
+	
+	#flexy{
+		display: flex;
+	}
+	
+	tr{
+		height: min-content;
+		font-size: 0.8em;
+	}
+	
+	table{
+		height: min-content;
+		font-family: consolas;
+	}
+</style>
+<title>IRACE-T</title>
+
+<div id="flexy">
+<canvas style="width: 1200px; height: 600px; border:1px solid black;" id="canvas"></canvas>
+<table id="hiscores">
+	<tr>
+		<th></th><th><b>Namn</b></th><th><b>Tid</b></th>
+	</tr>
+</table>
+</div>
+Bana:<select id="levelSelect"></select>   Namn:<input id="score" placeholder="Namn" maxlength="9">  <span id="scoredisplay"></span><br>
+RACING - Kontroller: WAD för att styra. R för att starta om.<br>
+<b>Byt bana och fyll i namn i rutorna ovanför.
+</b> För att göra egna banor, kolla filen "levels.js" i Notepad++
+
+<!--<script src="../scoretrack.js"></script>-->
+<script src="./levels.js"></script>
+<script src="./racing.js"></script>
